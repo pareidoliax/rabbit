@@ -22,7 +22,7 @@ rand(5..10).times do
 
 
 topics.each do |topic|
-  rand(20..40).times do
+  rand(6..15).times do
     p = u.posts.create(
      topic: topic,
      title: Faker::Lorem.words(rand(1..10)).join(" "),
