@@ -15,6 +15,11 @@ class Ability
         can :manage, :all
     end
 
+    if user.role? :moderator
+        can :destroy, Post
+        can :destroy, Comment
+    end
+
     can :read, :all
 
 
